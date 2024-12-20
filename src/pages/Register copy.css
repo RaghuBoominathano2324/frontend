@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#RegisterDiv{
+     
+  border-radius: 20px ;
+    width: 89%;
+    height: 110vh;
+    margin-left: 5%;
+    background-color: rgba(12, 15, 44, 0.985);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+opacity: 0.76;
+}
+#ftext{
+text-decoration: underline;
+color: white;
+font-size: 19px;
+animation: highlight 2s ease-in-out infinite;
+}
+@keyframes highlight {
+    0% {
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+    }
+    50% {
+        border-radius: 50px;
+      background-color: yellow; /* Highlight color */
+      color: rgba(252, 8, 8, 0.876); /* Text color when highlighted */
+      text-decoration: underline;
+    }
+    100% {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  #ftext-2{
+   font-size: 44px;
+    color: rgba(44, 175, 11, 0.866);
+    font-style: oblique;
+    border-radius: 30px ;
+    border: 3px soild green;
+    opacity: 0.7;
+  }
+.formComplete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.submitButton{
+    width: 15%;
+    border-radius: 30%;
+   height: 33%;
+   background-color:rgb(15, 139, 79);
+ 
+    width: 34%;
+    height: 55%;
+}
+ .submitButton:hover{
+    background-color: rgba(26, 113, 113, 0.693);
+    color: rgb(9, 9, 42);
+   
+ }
+input{
+  height: 40%;
+  width: 45%;
+  background-color: transparent; /* Transparent background */
+  border: 2px solid rgb(14, 165, 182); /* Light border color */
+  border-radius: 15px; /* Curved borders */
+  padding: 5px; /* Add padding for better appearance */
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+ 
+}
+
+
+input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: rgba(21, 56, 21, 0.867); /* Light green border on focus */
+  box-shadow: 0 0 5px lightgreen; /* Optional: add a light green glow */
+  color: white;
+  background-color: rgb(82, 125, 39);
+}
+input::placeholder{
+  color: rgb(60, 117, 150);
+}
+
+input:focus::placeholder {
+  color: rgb(12, 249, 12); /* Change placeholder color to light green on focus */
+}
+
+ .FormContainer{
+    background-image:url(../../Images/ForRegistrationForm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+ }
+ .donatetxt {
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #6cdbeb, #f7b42c);
+  background-size: 800% 800%;
+  animation: colorfulBackground 8s ease infinite;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@keyframes colorfulBackground {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+#donate{
+  width: 35%;
+  height: 30%;
+  background-color: #f7b42c;
+  color: white;
+  font-style: italic;
+  border-radius: 30px;
+}

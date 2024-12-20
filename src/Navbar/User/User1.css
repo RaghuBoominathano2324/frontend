@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App {
+    background-color: turquoise;
+    box-shadow: 0 4px 8px rgba(4, 1, 1, 0.1); /* Example of box shadow */
+    padding: 20px;
+    border-radius: 10px; /* Optional, for rounded corners */
+}

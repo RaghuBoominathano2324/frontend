@@ -1,0 +1,51 @@
+/* Apply the background image to the navbar */
+.custom-navbar {
+  background: url('../Images/PrecisionStrike.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a gradient overlay for better text visibility */
+.custom-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Black overlay with transparency */
+  z-index: -1; /* Put it behind the content */
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+  color: white !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for the nav links */
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important; /* Golden hover color */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+/* Logo and title text styling */
+.navbar-brand h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffcc00; /* Golden color for the title */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover h1 {
+  color: #fff;
+}
+
+/* Responsive navbar adjustments */
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    background-color: #ffcc00; /* Change the burger menu color */
+  }
+}

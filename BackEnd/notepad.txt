@@ -1,0 +1,13 @@
+"success": true,
+  "users": [
+    {
+      "_id": "676544d3eee9ff6166c57ec4",
+      "name": "raghu",
+      "age": 25,
+      "place": "banglr",
+      "qualification": "be",
+      "email": "gwe32@gmail.com",
+      "contactNumber": "9383848392",
+      "gender": "male",
+      "__v": 0
+    }

@@ -1,0 +1,77 @@
+/* General styles for the exam schedule */
+.exam-schedule {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .exam-schedule h2 {
+    color: #d9534f; /* Red color for title */
+    text-decoration: underline;
+    font-size: 2rem; /* Larger font for better visibility */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  /* Table header styling */
+  .table th {
+    background-color: #343a40; /* Dark background for header */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+  
+  /* Table cell styling */
+  .table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+  
+  /* Add alternating row colors */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Light gray color for odd rows */
+  }
+  
+  /* Add borders around the table */
+  .table-bordered {
+    border: 1px solid #ddd;
+  }
+  
+  /* Table cell wrapping */
+  .table td {
+    white-space: pre-wrap; /* Ensures the content wraps properly */
+    word-wrap: break-word; /* Prevents overflow */
+  }
+  
+  /* Hover effect for rows */
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Light background when hovering over a row */
+    cursor: pointer;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .exam-schedule {
+      padding: 20px;
+    }
+  
+    .table th, .table td {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
